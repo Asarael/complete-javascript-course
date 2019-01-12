@@ -120,3 +120,34 @@ switch (true) {
 }
 */
 
+
+
+/*-------------------
+*Functions
+---------------------*/
+
+
+/*-------------------
+*Function Statements and Expressions
+---------------------*/
+
+//Function declaration
+//function whatDoYouDo(job, firstName){}
+
+//Function expression
+var whatDoYouDo = function(job, firstName){
+    switch(job){
+        case 'teacher':
+            return firstName + ' enseña codigo';  //return devuelve el valor y finaliza la función
+        case 'driver':
+            return firstName + ' conduce un Uber';
+        case 'designer':
+            return firstName + ' diseña paginas web';
+        default:
+            return firstName + ' hace otra cosa';
+    }
+}
+
+console.log(whatDoYouDo('teacher', 'John'));
+console.log(whatDoYouDo('driver', 'Jane'));
+console.log(whatDoYouDo('retired', 'Mark'));
