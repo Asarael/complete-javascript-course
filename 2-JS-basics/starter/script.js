@@ -120,12 +120,53 @@ switch (true) {
 }
 */
 
+/*-------------------
+*Second challenge
+---------------------*/
+/*
+var johnTeam = (84 + 120 + 103) / 3;
+var mikeTeam = (84 + 120 + 103) / 3;
+var maryTeam = (17 + 134 + 105) / 3;
 
-
+if (johnTeam > mikeTeam && johnTeam > maryTeam) {
+    console.log('Johns team is the winer' );
+} else if (mikeTeam > johnTeam && mikeTeam > maryTeam) {
+    console.log('Mikes team is the winer' );
+} else if (maryTeam > johnTeam && maryTeam > mikeTeam) {
+    console.log('Mary team is the winer' );
+} else{
+    console.log('Theres a draw' );
+}
+*/
 /*-------------------
 *Functions
 ---------------------*/
+/*
+function calculateAge(birthYear){
+    return 2018 - birthYear;
+}
 
+var ageJohn = calculateAge(1990);
+console.log(ageJohn);
+
+
+function yearsRetirement(year, firstName){
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log(firstName + ' retires in ' + retirement + ' years.');
+    } else {
+        console.log(firstName + ' Is retired.');
+    }
+    
+    
+}
+
+yearsRetirement(1990, 'John')
+yearsRetirement(1941, 'Mike')
+yearsRetirement(1983, 'Jean')
+*/
 
 /*-------------------
 *Function Statements and Expressions
@@ -135,6 +176,7 @@ switch (true) {
 //function whatDoYouDo(job, firstName){}
 
 //Function expression
+/*
 var whatDoYouDo = function(job, firstName){
     switch(job){
         case 'teacher':
@@ -146,8 +188,9 @@ var whatDoYouDo = function(job, firstName){
         default:
             return firstName + ' hace otra cosa';
     }
-}
+};
 
 console.log(whatDoYouDo('teacher', 'John'));
 console.log(whatDoYouDo('driver', 'Jane'));
 console.log(whatDoYouDo('retired', 'Mark'));
+*/
