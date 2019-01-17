@@ -194,3 +194,7 @@ console.log(whatDoYouDo('teacher', 'John'));
 console.log(whatDoYouDo('driver', 'Jane'));
 console.log(whatDoYouDo('retired', 'Mark'));
 */
+
+/*-------------------
+*Arrays
+---------------------*/
