@@ -198,3 +198,133 @@ console.log(whatDoYouDo('retired', 'Mark'));
 /*-------------------
 *Arrays
 ---------------------*/
+/*
+var names = ['Juan', 'Marcos', 'Jess'];
+var years = new Array(1990, 1969, 1948);
+
+console.log(names[0]);
+console.log(names.length);
+
+//mutate data
+names[1] = 'Ben';
+names[names.length] = 'Mary';
+
+console.log(names);
+
+
+//Diferents data types
+
+/*
+var john =['John', 'Smith', 1990, 'designer', false]
+
+john.push('blue'); // add an element to end of array
+john.unshift('Mr. '); // add an element to start of array
+console.log(john);
+
+john.pop();
+john.pop();
+john.shift();
+console.log(john);
+
+
+console.log(john.indexOf(23));
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John is a designer';
+console.log(isDesigner);
+*/
+
+/*-------------------
+*CODING CHALLENGE 3
+---------------------*/
+/*
+//TIP CALCULATOR    
+function tipCalculator(bill) {
+    var percentage;
+    if (bill < 50) {
+        percentage = .2;
+    } else if (bill => 50 && bill < 200) {
+        percentage = .15;
+    } else {
+        percentage = .1;
+    }
+    return percentage * bill;
+
+}
+
+//console.log(tipCalculator(300));
+
+var bills = [ 124, 48, 268];
+var tips = [tipCalculator(bills[0]),
+            tipCalculator(bills[1]),
+            tipCalculator(bills[2])]
+var totales = [bills[0] + tips[0],
+                bills[1] + tips[1],
+                bills[2] + tips[2],]
+
+console.log(tips, totales);
+
+*/
+
+/*-------------------
+*OBJECTS AND PROPERTIES
+---------------------*/
+/*
+//object literal
+    //(objeto) 
+var john = {
+    //propiedades
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob'],
+    job: 'Teacher',
+    isMarried: false
+}
+         //(objeto.propiedad)
+console.log(john.lastName);
+console.log(john['job']);
+
+var x = 'birthYear';
+
+console.log(john['birthYear']);
+
+john.job = 'designer';
+john['isMarried'] = true;
+
+console.log(john);
+
+
+//new Object syntax
+
+var jane = new Object();
+jane.firstName = 'Jane';
+jane.birthYear = '1960';
+jane['lastName'] = 'Smith';
+console.log(jane);
+
+*/
+
+/*-------------------
+*OBJECTS AND METHODS
+---------------------*/
+
+
+var john = {
+    //propiedades
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1992,
+    family: ['Jane', 'Mark', 'Bob'],
+    job: 'Teacher',
+    isMarried: false,
+    calcAge: function(){  //method
+        //return 2019 - this.birthYear;
+        this.age = 2019 - this.birthYear;
+
+    }
+};
+
+//console.log(john.calcAge(1990));
+john.calcAge();
+
+console.log(john);
